@@ -1,11 +1,19 @@
-# 🤖 Context Development Agents - Feb 2025 🚀
+# 🤖 RAG and Personal RAG: Context Development Agents - Feb 2025 🚀
 
 *Personal RAG Pipeline Creation with AI Interview Bot Workflow*
 
 [![Context Development](https://img.shields.io/badge/Context%20Development-blue?style=flat-square)](https://example.com/context-development)
 
+
 This repository showcases a workflow for creating personal RAG pipelines using AI interview bots. It includes agent configurations for building and managing contextual information, leveraging vector stores to enhance RAG pipelines. The ultimate goal is to connect this knowledge store to agents for more relevant and targeted guidance.
 
+## Repo Map
+
+*   [Evaluation Prompts](resources/eval-prompts.md)
+*   [General Interviewer Config](agent-configs/interviewers/interviewer-general.md)
+*   [Gap-Filler Interviewer Config](agent-configs/interviewers/interviewer-gap-filler.md)
+*   [Context Extractor Config](agent-configs/parsers/extractor.md)
+*   [Context Planner Config](agent-configs/planners/helper.md)
 ## Agent Roles and Workflow
 
 In modern AI applications, specialized agents are increasingly used to handle specific tasks. This project is my exploration of using such agents to build a **personal context data store**, improving the performance and relevance of AI interactions. The core idea is that by engaging in "**interviews**" with AI agents, I can cultivate a **robust contextual data knowledge store** that reflects my unique experiences, skills, and goals.
@@ -67,23 +75,24 @@ Check out an example of a context-driven interview [here](examples/short-job-int
 
 | Repository | Description |
 |---|---|
-| [![Workflow](https://img.shields.io/badge/Workflow-blue?logo=github)](https://github.com/danielrosehill/Personal-RAG-Agent-Workflow) | Several workflows have been mapped out for using agents to proactively build a store of personal data. One approach involves connecting the interviewing agent to a growing personal contacts data store. Another approach involves using the interviewing agent and then manually feeding in the data. |
-| [![Agentic Context Development Interview Demo](https://img.shields.io/badge/Agentic%20Context%20Development%20Interview%20Demo-blue?logo=github)](https://github.com/danielrosehill/Agentic-Context-Development-Interview-Demo) | This Streamlit application models a basic AI agent interview process. The interviewing agent asks the user questions at random, and the user can periodically download the gathered contextual data. |
-| [![Personal-Context-Store-Ideation](https://img.shields.io/badge/Personal--Context--Store--Ideation-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Store-Ideation) | This repository contains general notes regarding the personal context or ideation idea and why it could be highly beneficial for AI users from a privacy protection standpoint. |
-| [![Context Data Generation Bot](https://img.shields.io/badge/Context%20Data%20Generation%20Bot-blue?logo=github)](https://github.com/danielrosehill/Context-Data-Generation-Bot) | This is an individual configuration for a context data generation bot. |
-| [![Personal Context Repo Idea](https://img.shields.io/badge/Personal%20Context%20Repo%20Idea-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Repo-Idea) | This repository outlines the personal context repo idea. |
-| [![Demo public context repo](https://img.shields.io/badge/Demo%20public%20context%20repo-blue?logo=github)](https://github.com/danielrosehill/My-LLM-Context-Repo-Public) | This is a demo public context repository. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/Personal-RAG-Agent-Workflow) | Several workflows have been mapped out for using agents to proactively build a store of personal data. One approach involves connecting the interviewing agent to a growing personal contacts data store. Another approach involves using the interviewing agent and then manually feeding in the data. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/Agentic-Context-Development-Interview-Demo) | This Streamlit application models a basic AI agent interview process. The interviewing agent asks the user questions at random, and the user can periodically download the gathered contextual data. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Store-Ideation) | This repository contains general notes regarding the personal context or ideation idea and why it could be highly beneficial for AI users from a privacy protection standpoint. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/Context-Data-Generation-Bot) | This is an individual configuration for a context data generation bot. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Repo-Idea) | This repository outlines the personal context repo idea. |
+| [![Open Repo](https://img.shields.io/badge/Open%20Repo-blue?logo=github)](https://github.com/danielrosehill/My-LLM-Context-Repo-Public) | This is a demo public context repository. |
+
 
 12-Feb-25
 
-## Repo Map
 
-*   [Evaluation Prompts](resources/eval-prompts.md)
-*   [General Interviewer Config](agent-configs/interviewers/interviewer-general.md)
-*   [Gap-Filler Interviewer Config](agent-configs/interviewers/interviewer-gap-filler.md)
-*   [Context Extractor Config](agent-configs/parsers/extractor.md)
-*   [Context Planner Config](agent-configs/planners/helper.md)
+## Benefits of Proactive Contextual Data Generation
 
+This approach offers a proactive method for generating personal contextual data, contrasting with reactive methods where data is extracted after user interaction with an AI tool. By deliberately creating and curating contextual data, users can:
+
+*   Enhance Personalized AI: Provide AI agents with selective and purpose-built personal data, improving the relevance and accuracy of AI interactions.
+*   Maintain Data Control: Empower users to control their own data store, avoiding vendor lock-in and ensuring portability across different AI tools.
+*   Improve Efficiency: Streamline the RAG pipeline by focusing on high-quality, relevant data, reducing the workload on vector stores and RAG pipelines.
 ## Author
 
 Daniel Rosehill
