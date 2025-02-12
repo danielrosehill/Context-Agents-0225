@@ -1,10 +1,10 @@
 # 🤖 Context Development Agents - Feb 2025 🚀
 
-*Building a **Powerful Contextual Data Knowledge Store** with AI Agents - My Personal Exploration*
+*Personal RAG Pipeline Creation with AI Interview Bot Workflow*
 
 [![Context Development](https://img.shields.io/badge/Context%20Development-blue?style=flat-square)](https://example.com/context-development)
 
-This repository contains a collection of agent configurations that I've been developing to streamline the creation of personal context data. My goal is to leverage AI agents to proactively build and manage my contextual information, storing it in a **vector store** to enhance personal context RAG (Retrieval-Augmented Generation) pipelines. Ultimately, I want to connect this **knowledge store** to the agents I use every day for more **relevant and targeted guidance**.
+This repository showcases a workflow for creating personal RAG pipelines using AI interview bots. It includes agent configurations for building and managing contextual information, leveraging vector stores to enhance RAG pipelines. The ultimate goal is to connect this knowledge store to agents for more relevant and targeted guidance.
 
 ## Agent Roles and Workflow
 
@@ -22,12 +22,12 @@ A planning agent is also included, which doesn't directly participate in intervi
 
 ## Agent Configuration Summary
 
-| Agent Configuration | Description |
-|---|---|
-| [General Interviewer](interviewers/interviewer-general.md) | This agent conducts interviews with me to generate contextual data. It asks questions at random and structures the output in a specific format suitable for **vector storage**, contributing to the **overall contextual data knowledge store**. |
-| [Gap-Filler Interviewer](interviewers/interviewer-gap-filler.md) | This agent identifies and fills in gaps in existing contextual data about me. It takes a proactive approach, probing areas that need **development and enrichment** to create a **more complete context profile** and a **more comprehensive knowledge store**. |
-| [Context Extractor](parsers/extractor.md) | This agent acts as a text formatting tool, extracting contextual data from unstructured text and reformatting it in the third person. This is useful for converting existing documents into **context snippets** for inclusion in the **contextual data knowledge store**. |
-| [Context Planner](planners/helper.md) | This agent assists me in planning my context data development efforts. It provides recommendations and suggestions for specific context snippets to develop, helping to guide the overall process of building a **comprehensive and well-organized knowledge store**. |
+| Agent Configuration | Description | Raw Config | JSON Config |
+|---|---|---|---|
+| [General Interviewer](agent-configs/interviewers/interviewer-general.md) | This agent conducts interviews with me to generate contextual data. It asks questions at random and structures the output in a specific format suitable for **vector storage**, contributing to the **overall contextual data knowledge store**. | [![Raw Config](https://img.shields.io/badge/Raw%20Config-blue)](agent-configs/interviewers/interviewer-general.md) | [![JSON Config](https://img.shields.io/badge/JSON%20Config-blue)](agent-configs/interviewers/json/interviewer-general.json) |
+| [Gap-Filler Interviewer](agent-configs/interviewers/interviewer-gap-filler.md) | This agent identifies and fills in gaps in existing contextual data about me. It takes a proactive approach, probing areas that need **development and enrichment** to create a **more complete context profile** and a **more comprehensive knowledge store**. | [![Raw Config](https://img.shields.io/badge/Raw%20Config-blue)](agent-configs/interviewers/interviewer-gap-filler.md) | [![JSON Config](https://img.shields.io/badge/JSON%20Config-blue)](agent-configs/interviewers/json/interviewer-gap-filler.json) |
+| [Context Extractor](agent-configs/parsers/extractor.md) | This agent acts as a text formatting tool, extracting contextual data from unstructured text and reformatting it in the third person. This is useful for converting existing documents into **context snippets** for inclusion in the **contextual data knowledge store**. | [![Raw Config](https://img.shields.io/badge/Raw%20Config-blue)](agent-configs/parsers/extractor.md) | [![JSON Config](https://img.shields.io/badge/JSON%20Config-blue)](agent-configs/parsers/json/extractor.json) |
+| [Context Planner](agent-configs/planners/helper.md) | This agent assists me in planning my context data development efforts. It provides recommendations and suggestions for specific context snippets to develop, helping to guide the overall process of building a **comprehensive and well-organized knowledge store**. | [![Raw Config](https://img.shields.io/badge/Raw%20Config-blue)](agent-configs/planners/helper.md) | [![JSON Config](https://img.shields.io/badge/JSON%20Config-blue)](agent-configs/planners/json/helper.json) |
 
 ## Implementation Sketch
 
@@ -49,19 +49,11 @@ To set up an actual workflow for building my **contextual data knowledge store**
 
 ## Use Cases
 
-The core idea is that by engaging in "**interviews**" with AI agents, I can cultivate a **robust contextual data knowledge store**. This store can then be **vectorized** and integrated with the AI agents I use daily, enabling them to provide more **relevant and targeted guidance**. Here are some potential applications:
+See [use-cases/personal.md](use-cases/personal.md) for personal use cases and [use-cases/business.md](use-cases/business.md) for business use cases.
 
-**Personal:**
+## Workflow Examples
 
-*   **Enhanced Daily AI Interactions:** Connect my **personal context data store** to my everyday AI assistants to receive **tailored advice, recommendations, and support** based on my unique history, preferences, and goals, making my AI interactions more **personalized and effective**.
-*   **Proactive Personal Insights:** Use the agents to identify **patterns and insights** in my personal data, helping me to make **better decisions** and **achieve my goals** by leveraging the power of my **contextual data knowledge store**.
-*   **Lifelong Learning Companion:** Build a **dynamic knowledge base** that evolves with me, providing a **personalized learning experience** and helping me to stay **up-to-date** on the topics that matter most to me, all powered by my **comprehensive contextual data knowledge store**.
-
-**Business:**
-
-*   **AI-Powered Customer Experiences:** Integrate a **customer context data store** with customer service agents to provide **personalized and efficient support**, leading to **increased customer satisfaction and loyalty** by leveraging a **deep understanding** of each customer's unique needs and preferences.
-*   **Data-Driven Decision Making:** Use the agents to gather and analyze data about my business, customers, and market, enabling me to make **more informed decisions** and **optimize my operations**, all based on the insights derived from my **comprehensive contextual data knowledge store**.
-*   **Personalized Employee Development:** Create a **context data store** for each employee, capturing their skills, experiences, and career aspirations. This can be used to provide **personalized training and development opportunities**, leading to **increased employee engagement and retention**, all thanks to the power of a **well-maintained contextual data knowledge store**.
+See [workflows.md](workflows.md) for detailed workflow examples.
 
 ## Contributing
 
@@ -69,49 +61,28 @@ I welcome contributions to this repository! If you have any ideas for new agents
 
 I invite you to discuss these ideas further! You can find me at [danielrosehill.com](https://danielrosehill.com) or reach out via email at public@danielrosehill.com.
 
+Check out an example of a context-driven interview [here](examples/short-job-interview/1.md).
+
 ## Related Repositories
 
-### Workflow Examples
-
-[![Workflow](https://img.shields.io/badge/Workflow-blue?logo=github)](https://github.com/danielrosehill/AI-Interview-Workflow-V2)
-
-Several workflows have been mapped out for using agents to proactively build a store of personal data.
-
-One approach involves connecting the interviewing agent to a growing personal contacts data store.
-
-Another approach involves using the interviewing agent and then manually feeding in the data.
-
-### Agentic Context Development Interview Demo
-
-[![Agentic Context Development Interview Demo](https://img.shields.io/badge/Agentic%20Context%20Development%20Interview%20Demo-blue?logo=github)](https://github.com/danielrosehill/Agentic-Context-Development-Interview-Demo)
-
-This Streamlit application models a basic AI agent interview process. The interviewing agent asks the user questions at random, and the user can periodically download the gathered contextual data.
-
-### Personal-Context-Store-Ideation
-
-[![Personal-Context-Store-Ideation](https://img.shields.io/badge/Personal--Context--Store--Ideation-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Store-Ideation)
-
-This repository contains general notes regarding the personal context or ideation idea and why it could be highly beneficial for AI users from a privacy protection standpoint.
-
-### Context Data Generation Bot
-
-[![Context Data Generation Bot](https://img.shields.io/badge/Context%20Data%20Generation%20Bot-blue?logo=github)](https://github.com/danielrosehill/Context-Data-Generation-Bot)
-
-This is an individual configuration for a context data generation bot.
-
-### Personal Context Repo Idea
-
-[![Personal Context Repo Idea](https://img.shields.io/badge/Personal%20Context%20Repo%20Idea-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Repo-Idea)
-
-This repository outlines the personal context repo idea.
-
-### Demo public context repo
-
-[![Demo public context repo](https://img.shields.io/badge/Demo%20public%20context%20repo-blue?logo=github)](https://github.com/danielrosehill/My-LLM-Context-Repo-Public)
-
-This is a demo public context repository.
+| Repository | Description |
+|---|---|
+| [![Workflow](https://img.shields.io/badge/Workflow-blue?logo=github)](https://github.com/danielrosehill/Personal-RAG-Agent-Workflow) | Several workflows have been mapped out for using agents to proactively build a store of personal data. One approach involves connecting the interviewing agent to a growing personal contacts data store. Another approach involves using the interviewing agent and then manually feeding in the data. |
+| [![Agentic Context Development Interview Demo](https://img.shields.io/badge/Agentic%20Context%20Development%20Interview%20Demo-blue?logo=github)](https://github.com/danielrosehill/Agentic-Context-Development-Interview-Demo) | This Streamlit application models a basic AI agent interview process. The interviewing agent asks the user questions at random, and the user can periodically download the gathered contextual data. |
+| [![Personal-Context-Store-Ideation](https://img.shields.io/badge/Personal--Context--Store--Ideation-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Store-Ideation) | This repository contains general notes regarding the personal context or ideation idea and why it could be highly beneficial for AI users from a privacy protection standpoint. |
+| [![Context Data Generation Bot](https://img.shields.io/badge/Context%20Data%20Generation%20Bot-blue?logo=github)](https://github.com/danielrosehill/Context-Data-Generation-Bot) | This is an individual configuration for a context data generation bot. |
+| [![Personal Context Repo Idea](https://img.shields.io/badge/Personal%20Context%20Repo%20Idea-blue?logo=github)](https://github.com/danielrosehill/Personal-Context-Repo-Idea) | This repository outlines the personal context repo idea. |
+| [![Demo public context repo](https://img.shields.io/badge/Demo%20public%20context%20repo-blue?logo=github)](https://github.com/danielrosehill/My-LLM-Context-Repo-Public) | This is a demo public context repository. |
 
 12-Feb-25
+
+## Repo Map
+
+*   [Evaluation Prompts](resources/eval-prompts.md)
+*   [General Interviewer Config](agent-configs/interviewers/interviewer-general.md)
+*   [Gap-Filler Interviewer Config](agent-configs/interviewers/interviewer-gap-filler.md)
+*   [Context Extractor Config](agent-configs/parsers/extractor.md)
+*   [Context Planner Config](agent-configs/planners/helper.md)
 
 ## Author
 
